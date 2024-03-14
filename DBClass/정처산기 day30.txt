@@ -1,0 +1,106 @@
+정처산기 day30
+-------------------------------------------------
+LIKE 검색
+	-WHERE절에 ('='이 아니라) LIKE 키워드를 사용.
+	-(문자열의) 일부만으로 검색
+	   ex) 'Steven' --> 'St'로 시작하는지? 
+	   ex) 'Steven' --> 'eve'가 포함되어 있는지?
+	   ex) 'Steven' --> 'en'으로 끝나는지?
+	-와일드카드 문자: 
+	 _ : 딱 1개의 문자
+	% : "0개" 이상의 문자
+ 	(ex) SELECT *
+	     FROM employees
+	     WHERE first_name LIKE 'ST%';
+	(ex) WHERE first_name LIKE '%ST';
+	(ex) WHERE first_name LIKE '%ST%';
+
+------------------------------------------------
+연습12. 성이 k로 시작하는 사원의 이름_성, 폰번호를 조회
+연습13. 이름이 er로 끝나는 사원의 이름_성, 입사일을 조회
+연습14. 성이 4글자인 사원의 이름, 성을 조회.
+
+(참고) BETWEEN ...AND 연산자(권장)
+ -"컬럼명 BETWEEN 값1 AND 값2
+  --> 컬럼명 >= 값1 AND 컬럼명 <= 값2 
+ - 해당 컬럼의 값이 값1과 값2 사이에 있냐?
+ - 단, 값1 < 값2
+
+(ex) 급여가 8000달러 이상 9000달러 이하인 사원의 이름
+성, 급여, 입사일을 조회.
+ SELECT first_name, last_name, salary, hire_date
+ FROM employees
+ WHERE salary BETWEEN 8000 AND 9000;
+
+------------------------------------------------------
+(참고) IN 연산자 (권장)
+-- NOT IN 연산자도 사용 가능
+ - "컬럼명 IN (값1, 값2, 값3, ...)"
+ - 해당 컬럼의 값이 이들 중 하나에 해당되냐?
+    (EX) 부서 ID가 10, 20, 30인 사원들의 
+	이름, 성, 급여, 부서ID를 조회.
+	SELECT first_name, last_name, salary, department_id
+	FROM employees
+	WHERE department_id IN (10,20,30);
+
+----------------------------------------------------
+연습15 (BETWEEN ...AND 연산자)
+ *. 연봉 = (월급여 + 월급여 *수수료율) *12
+ 연봉이 130000 이상 150000 이하인 사원의 이름, 성,연봉
+부서ID를 조회하되 이름을 기준으로 ABC순으로 정렬하여 
+출력
+
+--------------------------------------------------------
+SQL문 3가지: 
+ DDL (Data Definition Language. 데이터 정의어)
+ : create table
+ DML (Data Manipulation Language)
+ : 'CRUD'
+ DCL (Data Control Language)
+ : 'grant'
+
+CRUD(Create / Read / Update / Delete)
+          생성    조회      수정      삭제
+ C : 데이터 추가(INSERT문)
+ -->INSERT INTO 테이블명(컬럼명) VALUES (데이터값);
+ R : 데이터 조회(SELECT문)
+
+ U : 데이터 수정(UPDATE문)
+ --> "UPDATE 테이블명 SET 컬럼 = 값 WHERE 조건식"
+ D : 데이터 삭제(DELETE문)
+ --> "DELETE FROM 테이블명 WHERE 조건식"
+-------------------------------------------------------
+DISTINCT 키워드 : 중복 제거<--- / ALL 키워드
+Ex) SELECT DISTINCT job_id FROM employees;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

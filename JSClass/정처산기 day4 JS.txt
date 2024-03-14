@@ -1,0 +1,19 @@
+정처산기 Day4
+JS
+
+-------------------------------------------------------------------
+
+회원가입 연습 --> 서브 리버튼을 눌렀을때 j쿼리가 시작돼서 값들을 다 가져오는 것을 보여줘야함
+
+Ex16
+jQuery Selector : $(___css selector___)
+ 제이쿼리셀렉터.val() : getter (input 태그 등)
+ 제이쿼리셀렉터.val(___) : setter
+ 	
+ 제이쿼리셀렉터.text() : getter / setter
+ 제이쿼리셀렉터.html() : getter / setter
+ 제이쿼리셀렉터.css() : getter / setter
+
+[암기] '제이쿼리 요소 탐색'
+	1) 부모 -> .parent()
+	2) 자식들 중에서 -> .find()

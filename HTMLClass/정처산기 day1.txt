@@ -1,0 +1,43 @@
+정처산기 day1
+html
+
+-설치 : 
+ 1) Eclipse IDE for Enterprise Java and Web Developers
+ 2) Apache Tomcat(v8.5) --버전 중요x
+
+- 이클립스 실행 : 
+ 1) 퍼스펙티브 전환 -> Java EE
+ 2) 프로젝트 생성 -> Dynamic Web project
+ 3) 톰캣 설정을 바꿨으면 리스타트
+
+- '인터넷'의 시초 = 아파넷 ARPANET 찾아보기
+  HTTP --> HTTPS 무조건 알기 
+(인증서 차이 S는 Secure)
+- HTML (표준)이 왜 생겼는지 알기
+
+HTML 5.0의 특징
+- <!doctype html> 이 첫 줄에 있다
+
+Ex00. html Hello world.
+	-'여는 태그'
+	-'닫는 태그'
+	-'head'태그, body태그
+	head : 이 페이지의 설정, 기능(JavaScript),모양새(CSS) 등
+	body : 화면에 실제로 그릴 내용 등
+	-컨텐트 : 내용
+
+Ex01. <p> : paragraph 문단
+       <b> : bold체 (글씨 굵게)
+       <font> : -> size = "5" , color = "red"식으로 바꿈
+       
+Ex03. <a>태그 : 링크 URL -->href 속성에
+       <img> 태그. -->src 속성에
+       
+Ex04. Excape Code.
+	-&nbsp; 띄어쓰기 한 칸
+	-&lt; less than 작다 <
+	-&gt; greater than 크다 >
+	-&amp; ->&
+
+
+ 

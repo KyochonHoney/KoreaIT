@@ -1,0 +1,10 @@
+문자열 뒤집기 : Stringbuilder
+문자열 반복 : repeat(i)
+문자열 대체 : String replaceTest - "우리 은서 하이"
+	syso ( replaceTest.replace("은서","EUNSEO");
+문자열에 있는지 여부 : s.contains("asd");
+다른 값으로 : s.valueOf(int);
+배열 정렬 : Arrays.sort(arr);
+배열 복사 : Arrays.coptOfRange();
+HttpSession일정시간 후 비우기 :
+	request.getSession().setMaxInactiveInterval("초"*내가 원하는 시간);	

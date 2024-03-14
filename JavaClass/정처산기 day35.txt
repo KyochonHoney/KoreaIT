@@ -1,0 +1,57 @@
+정처산기 Day35
+-----------------------------------------------------------------
+Stack영역에는 int, float, double, b---8가진데
+String같은 건 Heap영역에만 존재 가능
+
+Wrapper Class : stack 영역에 존재하는 것들을 고의로 Heap영역에 저장하기
+
+byte	Byte
+short 	Short
+int	Integer ★
+long	Long
+float	Float
+double	Double
+char	Character
+boolean	Boolean
+
+유틸리티성 메서드 제공.
+int --> 최소 값 / 최대 값.
+	Integer.MIN_VALUE
+	Integer.MAX_VALUE
+	Integer.parseInt()
+-----------------------------------------------------------
+Ex01 --> 래퍼클래스 (Integer)는 int랑 동일하게 사용
+	-"auto-boxing"
+	-"auto-unboxing"
+
+제네릭(Generics)
+ex. ArrayList<Integer> --> 꺽쇠에 대한 이야기
+cf) int[]
+ 
+1. 제네릭 메서드
+Ex03.
+	<T> : 'Type Parameter'
+	T --> 타입이 어떤 건지는 run-time중에 결정됨.
+
+Ex04.	[고급] extends CC / 'super'
+	
+
+2. 제네릭 클래스
+	ArrayList<Integer>
+Ex05
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

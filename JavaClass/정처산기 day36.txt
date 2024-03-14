@@ -1,0 +1,19 @@
+정처산기 day36
+Today 게시판 : paging / pagination
+
+<paging> ex) page 1 (pagesize:20) -> 100~81
+	     page 2 (pagesize:20) ->  80~61
+SQL문 --> 암기x / 1) 주어진다... 2) build up
+SELECT t2.*
+FROM (SELECT rownum rnum, t.*
+      FROM (SELECT * FROM board1 order by bno desc) 
+      t)
+ t2
+ WHERE t2.rnum >= 1 AND t2.rnum<=20;
+--> 페이징 처리 20페이지마다 끊겠다
+--------------------------------------------------------
+<pagination>
+	...
+	1 2 3 4 5 --> 페이지 번호
+Ex) p.1
+	1 2 3 4 5>> 2,3,4,5는 a태그 1은 span태그

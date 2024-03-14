@@ -1,0 +1,127 @@
+day 1
+------------------------------------------------------------
+Oracle
+[용어] DB  DBMS  SQL
+	DB : DataBase
+	DBMS : DataBase Management System
+	SQL : Structured Query(질의) Language
+
+연습1. employees 테이블로부터 first_name과 last_name을
+	조회해보세요
+	SELECT first_name, last_name FROM employees;
+SQL은 10번 이상 반복하기
+[문법] SELECT 컬럼명(들) FROM 테이블명;
+	EX) SELECT * FROM employees;
+	1) FROM절 (employees 테이블로부터) 
+	2) SELECT절 (선택)
+
+	주석 "--"
+
+연습2. 
+ departments, jobs 테이블의 컬럼 구성을 확인해보세요.
+--이 두테이블의 모든 "행을 각각 조회"
+
+연습3 
+사원테이블로부터 모든 사원들의 
+사원번호(employee_id), first_name,email,phone 조회
+
+연습4
+jobs 테이블로부터 job_title, max_salary정보를 조회
+
+연습5 모든 부서들의 부서id 부서이름을 조회
+
+연습6 모든 나라들의 나라 ID 나라이름을 조회
+
+
+
+CREATE TABLE TABLE1 
+(
+  FIRST_NAME VARCHAR2(20) 
+, LAST_NAME VARCHAR2(20) 
+, EMAIL VARCHAR2(100) NOT NULL 
+, PASSWORD NUMBER 
+, HOBBY VARCHAR2(20) NOT NULL 
+, CONSTRAINT TABLE1_PK PRIMARY KEY 
+  (
+    EMAIL 
+  )
+  ENABLE 
+);
+
+테이블 만들기-테이블 우클릭 후 새테이블 후 만들기
+테이블에 값 집어넣기
+
+INSERT INTO 클래스이름(테이블 각열들)
+VALUES(각 행의 값들);
+(Oracle user1018 pass1234)
+--테이블에 값 집어넣기
+INSERT INTO user1(first_name,last_name,email,password,hobby) --user1에 들어가는 값을 다 넣을 때는 생략가능
+VALUES('eun','sin','joms0307@gmail.com',1234, 'swimming');
+
+SELECT * FROM user1;
+
+(Oracle system)
+ALTER USER hr ACCOUNT UNLOCK;
+
+ALTER USER hr IDENTIFIED BY hr;
+
+CREATE USER user1018 IDENTIFIED BY pass1234;
+GRANT connect, resource TO user1018;    --'role' 권한을 모아놓음 ,,connect, resource는 바꿀 일이 없으니까 외우기
+
+
+(Oracle hr hr)
+--연습1. employees 테이블로부터
+--first_name과 last_name을 조회해보세요
+SELECT first_name, last_name 
+FROM employees;
+
+--연습2. departments, jobs 테이블의 컬럼 구성을 확인해보세요.
+--이 두테이블의 모든 "행을 각각 조회"
+
+
+--연습3 사원테이블로부터 모든 사원들의 사원번호(employee_id), first_name,email,phone 조회
+SELECT employee_id, first_name, email, phone_number
+FROM employees;
+
+--연습4 jobs 테이블로부터 job_title, max_salary정보를 조회
+SELECT job_title, max_salary
+FROM jobs;
+
+--연습5 모든 부서들의 부서id 부서이름을 조회
+SELECT department_id    --몇 개 있는지? 27개
+FROM departments;
+
+--연습6 모든 나라들의 나라 ID, 나라이름을 조회
+SELECT country_id, country_name --중국 일본 미국의 나라ID는? CN JP US
+FROM countries;
+
+--연습7 사원 'Steven King'의 부서 ID는? SELECT * FROM employees; 
+
+--암기x
+CREATE USER user1018 IDENTIFIED BY pass1234;
+GRANT connect, resource TO user1018;
+--수여하다
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

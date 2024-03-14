@@ -1,0 +1,22 @@
+정처산기 Day3
+
+Js
+---------------------------------------------------------
+Form 태그
+- 요청방식 (request method) : get(default값), post
+
+get : 입력한 값들이 쿼리스트링에 담긴다(URL노출)
+post : 입력한 값들이 숨겨집 (개발자도구에서 볼 수 있음)
+
+-Ex) 웹브라우저 주소창 .. 주소입력 [엔터] -> get방식
+-Ex) 링크(a태그) 클릭 --> get방식
+-Ex) location.href=주소; --> get방식
+-Ex) form태그 --> get/post방식
+
+-정규표현식 --< 구글. "자바스크립트 정규표현식 이메일주소"
+
+jQuery CDN.
+-"CDN" : Content Delivery Network
+
+연습 [-] 숫자 [+]
+	숫자가 -값은 안되게

@@ -1,0 +1,19 @@
+정처산기 day40
+
+파일업로드, WebSocket.
+----------------------------------------------------------
+파일 업로드.(UI가 그럴싸하게 하고 싶다면 Dropzone.js로하기)
+	-cos.jar
+	
+[정리] 파일업로드.
+	-form태그 
+	1) method 속성의 값은 "post"
+	2) enctype 속성의 값을 "multipart/form-data"로.
+	-input type="file"
+	-파일을 업로드하면, 서버의 특정 폴더에 파일이 저장됨. 이때 동일한 이름이 있을 경우에 대비 -->'rename정책 정해주기'
+	
+Expression Language (EL)
+  -${ } ,중괄호 안에는 'Attribute'의 이름을 안에.
+  - attribute는 page, request, session, application 에 있기 때문에 EL 사용 가능
+
+---------------------------------------------------------------

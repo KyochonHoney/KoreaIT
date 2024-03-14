@@ -1,0 +1,41 @@
+JSP
+day1
+
+Servlet & JSP : Java 기반의 서버 개발
+WAS : Web Server + 서블릿 컨테이너
+ -> 서블릿 컨테이너가 JSP를 자바로 바꿔주는데 자바를 실행해서 html파일로 바꿔준다.
+
+인터프리터 언어 방식 : 한 문장씩 CPU가 바이트코드에서 기계어로 번역함
+---------------------------------------------------------
+Ex01.jsp
+[용어] <%부터%>까지 : scriptlet(스크립틀릿)
+         <%=부터%>까지 : Expression(익스프레션)
+         <%@부터%>까지 : Directive(디렉티브)
+	-->디렉티브 찾아서 종류 뭐있는지 공부하기
+         <%@page~%>까지 : Page Directive
+.jsp -> .java -> .class -> (HTML문서) [.jsp의 실행방식]
+[.java의 실행방식]
+Ex01_jsp.java로의 변환.
+_jsp.java에서 가장 중요한 핵심인 메서드를 알기
+   -->(public void _jspService){}
+. 그 메서드의 파라미터#1, 파라미터#2
+  --> (~~request, ~~response)
+-----------------------------------------------------
+[정리] JSP에서 파라미터,
+	request.getParameter(파라미터이름)
+	(ex) 요청 : a.jsp?num=5
+	      a.jsp) request.getParameter("num") -->
+문자열으로 num파라미터의 값을 리턴하는 메서드.
+	"5" ---> 5 Integer.parseInt("5");
+		or Integer.valueOf("5");
+------------------------------------------------------
+Ex04.jsp
+Ex05.jsp 연습
+파라미터 dan : 출력한 수를 받음.
+	(예를 들어 dan = 5라면,
+	구구단 출력 5*1=5
+Ex06.jsp
+연습) 파라미터 a : 시작 숫자
+	파라미터 b: 끝 숫자 (a<b가정)
+	a부터 b까지의 합 : ___
+	EX) 3부터 5까지의 합 : 12

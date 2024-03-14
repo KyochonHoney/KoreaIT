@@ -1,0 +1,68 @@
+ Day2
+Today. PRJ / Servlet & jsp
+---------------------------------------------------------
+Ex05. jsp + Ex05p2.jsp
+	첫번째 페이지: 숫자 입력
+	두번째 페이지: 구구단 출력
+
+자바 변수의 값을 JS 변수로 바꿀 수 있음
+JS 변수의 값을 반대로 자바 변수에 전달
+
+Ex06. jsp 
+	- 파라미터 a, b
+	 if a랑 b가 주어지지 않았으면, 적절한 에러메시지.
+	-a부터 b까지의 합을 출력( 단, a<b)
+
+*.request.getParameter(없는 파라미터 이름) --> null
+*. 한국어가 깨지기 때문에 안 깨지려면
+	request.setCharacterEncoding("utf-8");
+*. Integer.parseInt(request.getParameter(...))
+
+Ex08
+	ID : _____
+	PW : _____
+	Login
+
+Ex08p2 로그인 성공여부
+	로그인 성공
+	로그인 실패
+
+Ex10.jsp.jsp --> Ex10Servlet.java --> Ex10p2.jsp
+
+*. 서블릿(Servlet)
+	-웹 브라우저의 요청에 응답할 수 있는 웹서비스
+	-extends HttpServlet
+	-@WebServlet 애노테이션 --> 'URL매핑'(서블릿매핑)
+예외 	-Checked Exception : 컴파일 단계에서 체크됨.
+	-Unchecked Exception : 컴파일 단계에서는 체크안됨
+
+기억) SELECT --> pstmt.executeQuery(); 리턴 : ResultSet
+	Insert,Update, Elete --> pstmt.executeUpdate();
+	참고 리턴 ㅣ 영향 받은 행의 개수(int 타입)
+*.서버 안에서의 이동 : 
+	-RequestDispatcher 객체가 필요.
+	- RequestDispacther rd = request.getRequestDispatcher("주소값");
+	-rd.forward(request객체 참조값, response객체 참조값);
+*.with 데이터 : 
+	-request.setAttrubute(이름, 값);
+	-request.getAttribute(이름); --> 리턴타입이 Object --> 그래서 형변환이 필요한 것.
+
+*. VO : Value Object.
+	ex) MemberVO 클래스
+		필드 id
+		필드 pw
+*. DTO : Data Transfer Object
+	ex) MemberDTO 클래스
+
+------------------------------------------
+요청 ㅣ /ExBoard --> ExBoardServlet 실행-->'서블릿매핑'
+ 주소 --> 'URL-pattern'
+서블릿 매핑:
+1) web.xml 에 하는 방식( 옛날에 하던 방식)
+2) @WebServlet(주소)
+
+------------------------------------------------
+*. request객체에 
+	1) parameter 형태로, "문자열"
+	2) attribute 형태로, "Object타입"
+

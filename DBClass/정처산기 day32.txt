@@ -1,0 +1,41 @@
+정처산기 day32
+Oracle,
+-----------------------------------------------------
+GROUP BY절
+	-(전체를 어떤 그룹으로 나눌 건지를 결정)
+	-생략하면 --> 전체를 하나의 그룹으로 결정
+	
+[실행순서 - 기억]
+ SELECT	4
+ FROM	1
+ WHERE	2
+ GROUP BY	3
+ ORDER BY 	5(항상 마지막에 실행)
+
+연습 1. 업무별로 평균급여를 조회하되, 평균급여 기준 내림차순으로 출력.
+	- 조회할 컬럼 : "업무ID", "평균급여"
+
+연습2. 	부서별로 부서ID, 인원수를 조회.
+	- 조회할 컬럼 : "부서ID", "인원수"
+
+연습3(고급).	부서별로 부서명, 인원수를 조회.
+	- 조인.
+	- employees + departments
+	- 조인조건 : employees.department_id = departments.department_id
+
+----------------------------------------------------------
+시퀀스
+next value - ".nextval" 	: 다음 숫자를 만들어줌
+current value - ".currval"	: 현재 숫자를 만들어줌
+	--> 주의 ) 가장 최근에 .nextval 한 값을 말해줌
+
+FROM dual -->가상의 테이블
+[외부평가 목적으로 암기]
+	CREATE SEQUENCE seq_board1_bno
+	INCREMENT BY 1
+	START WITH 104;
+
+SELECT      *
+FROM        departments , employees;
+	 -->카티션 곱 (107*27) (Cartesian Product)
+--> 방지해주려면 WHERE에서 조인조건 주기

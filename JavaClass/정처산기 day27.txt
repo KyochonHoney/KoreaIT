@@ -1,0 +1,30 @@
+정처산기 Day 27
+------------------------------------------------------
+JAVA
+
+DB에 입력
+ALTER USER hr ACCOUNT UNLOCK -->ctrl enter
+ALTER USER hr IDENTIFIED BY hr; -->ctrl enter
+
+정처산기 day 27
+C obj = new C(); --> C의 객체
+P obj = new C(); --> C라는 부모에서 나온 P의 자식객체
+-부.자는 되고 자-부는안된다
+
+다형성 (Polymorphism) : 실행상황에 따라서 다른 동작
+ (ex) P obj = new C();
+      P obj = new P();
+       -1) 오버로딩 2) 오버라이딩 ★☆3) 참조변수
+
+Ex2701. 참조변수의 다형성
+ : 부모클래스 타입의 참조변수가 자식클래스 타입의
+객체를 참조할 수 있음
+ -부.자는 되고 자-부는안된다
+	
+Ex2702 연산자 "instanceof" 
+	-->"참조변수 instanceof 클래스이름"
+          -클래스 형변환시에 꼭 사용.
+	Ex) Parent obj = new Child();
+	if(obj instanceof Child){
+		((Child)obj).mOfChild();
+	} -->습관 들이기

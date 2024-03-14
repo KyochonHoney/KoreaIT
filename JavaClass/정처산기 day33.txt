@@ -1,0 +1,47 @@
+정처산기 day33
+
+예외처리(Exception Handling)
+  - 예외 VS 에러 ?
+  
+Ex3301 내가 '예외'를 처리하지 않은 경우:
+  1) '빨간글'이 뜸
+  2) 프로그램 실행 중지
+
+Ex) Exception in thread "main" java.lang.ArithmeticException
+			    -->예외가 발생한 클래스 명
+ --예외 -- checked Exception, unchecked Exception
+             두 종류가 있음
+  
+Ex3302 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

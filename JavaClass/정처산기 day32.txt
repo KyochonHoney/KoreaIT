@@ -1,0 +1,24 @@
+정처산기 day32
+
+중첩클래스(Nested Class)
+
+class A{	-->외부클래스
+	private int num = 10;
+	class C { -->중첩클래스
+
+	}
+	public static void main(String[] args) {
+	
+	}
+}
+
+[암기] 중첩클래스의 종류:
+	1. 내부클래스 ★ -> non-static Ex3201
+	2. 스태틱클래스 ★	-> static Ex3202
+	3. 로컬클래스 -> non-static Ex3203
+	4. 익명클래스 ★★	-> non-static Ex3204
+	-이름이 없는 클래스
+	 class 이름 {...}
+	 이름 obj = new 이름();
+
+Ex3201. 내부 클래스 

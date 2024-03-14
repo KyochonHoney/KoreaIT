@@ -1,0 +1,37 @@
+정처산기 day 39
+Collection Framework
+	1. List 순서 O, 중복 O -> index가 있음
+	2. Set 순서 X, 중복 X -> index가 없음
+	3. Map 순서 이름 : 값
+
+'Hash'Set
+ - Hash : 'Hash Algorithm'
+ - Hash Algorithm이 적용된 Set 이다.
+
+[정리] Set
+	- HashSet, TreeSet
+	- [암기] "순서X, 중복 X"
+
+제너릭 클래스 -->   Ex. ArrayList<Integer>
+		Ex. HashSet<Integer>
+
+[정리] 1) 방번호 결정) .hashCode()
+        2) 같은지 비교) .equals()
+Ex. HashSet<Integer> 
+-------------------------------------------
+'TreeSet'
+	-'Tree' : 이진탐색트리(Binary Search Tree)
+[정리] '정렬기준' 셋팅(1) : Comparable 인터페이스 방식
+	--> '저장될 요소(클래스)'에 셋팅.
+	- int compareTo( T o )
+		왼 < 오 : -값을 리턴 
+		왼 = 오 : 0을 리턴
+		왼 > 오 : +값을 리턴
+		또는, 왼 - 오 값을 리턴
+		
+		(2) : comparator 인터페이스 방식
+	--> 인터페이스를 구현하는 클래스 정의.
+	--> 그 클래스를 객체 생성
+
+------------------------------------------
+HashMap & TreeMap

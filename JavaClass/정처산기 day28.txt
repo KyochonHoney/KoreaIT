@@ -1,0 +1,29 @@
+정처산기 day28
+
+JDBC (Java DataBase Connection) : java와 연결해줌
+- JDBC 드라이버 (driver) 파일 --> C:\oraclexe\
+에서 *.jar 검색 ojdbc6.jar 찾기
+ojcbc6.jar를 워크스페이스에 복붙하고
+프로젝트 우클릭 후 properties 를 들어가서 libraries에서
+add external jars를 눌러 해당 ojdbc6.jar클릭 후 apply
+
+주어지는 정보 : 
+	1. oracle.jdbc.driver.OracleDriver
+	2. jdbc:oracle:thin:@127.0.0.1:1521:xe
+		127.0.0.1 ip는 현재 쓰고 있는 컴퓨터
+		== localhost
+암기
+	1. Connection 객체 
+ : '연결'(DBMS종류 , 주소, 계정아이디, 비밀번호)
+	2. Statement 객체
+ : SQL문을 실행
+	3. ResultSet 객체
+ : 결과 테이블
+
+
+DBMS에는 My SQL, Oracle, MariaDB, MS SQL Server가 있음
+
+
+
+
+

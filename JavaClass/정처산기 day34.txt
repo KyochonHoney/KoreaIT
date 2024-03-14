@@ -1,0 +1,82 @@
+정처산기 day34
+Thread : 동시에 실행을 시킬 수 있는 코드
+Ex) "A"와 "B"를 동시에 출력
+
+--만드는 방법이 2가지
+1. extends Thread 방식 ★★★
+2. implements runnable 방식
+
+암기
+1) extends Thread" 하는 클래스를 정의.
+2) run() 메서드를 오버라이드 --하고 싶은 행동을 여기에 쓰기
+3) 객체 생성
+4) .start() 호출
+
+Ex3401 
+extends Thread 방식 사용하기
+
+2.implements runnable
+1) "implements Runnable"하는 클래스를 정의
+2) run() 메서드를 오버라이드 -- 하고 싶은 행동을 여기에
+3) Runnable 객체 생성
+4) Thread 객체 생성 (생성자 파라미터에 3)의 참조값을 달아줌
+(
+5) .start() 호출
+
+Ex3402
+implements runnable 방식
+-Single-Thread Programming
+-Multi-Thread Programming
+
+-'Thread-Safe' --> 용어 찾아보기
+StringBuilder : 빠르다. Thread-safe방식이 아님
+StringBuffer : 느리다. Thread-safe방식
+
+
+
+-'Process' VS 'Thread'
+ --> Process는 별도의 힙영역을 가지지만
+      Thread는 하나의 힙영역을 공유함
+
+-Program : 명령어의 집합.
+명령어 = 8바이트로 해서 나열돼있음 (64비트 인터넷 32비트 인터넷)
+
+Q3401 문자열을 하나 입력 받아서 1초마다 한번씩 출력
+	(다섯 번 출력)
+
+Q3402 문자열을 두 개 입력 받아서 1초마다 s1,s2로 출력
+
+Q3403 사칙연산 게임(고급) 사칙연산게임
+	3 + 5
+	--> (엔터)
+
+Ex3403
+-5050이 안 뜨는 이유
+동기화 문제 
+ -멀티 쓰레드 환경에서 아무런 문제가 없다 = ' ____'
+
+해결 : 1) 동기화 메서드방식 (=간단=느리다)
+	->리턴타입 앞에 'synchronized'
+        2) 동기화 블럭 방식(=복잡 = 빠르다)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

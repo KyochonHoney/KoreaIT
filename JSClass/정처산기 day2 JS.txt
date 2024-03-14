@@ -1,0 +1,70 @@
+정처산기 day2
+JavaScript
+
+-----------------------------------------------------------
+Snake case --> shin_eunseo
+Camel case --> ShinEunseo
+
+Ex12. form태그 안에서 button 태그를 쓰고 싶다면
+	<button type = "button">을 써줘야 들어감
+
+JS 주요 문자열 함수
+- 문자열은 '변경 불가 객체'.
+
+ex) "자바".replace("자","Ja");
+ -->"Ja바"
+ --> "자바"의 주소값을 들어가 값을 바꾸는 게 아닌
+ 새로운 Ja바라는 주소를 만들어 그 주소값을 가져오는 방식임
+
+때문에 str = "자바"
+	str = str.replace("자", "Ja");가 맞는 거임
+
+[정리] let s = "Hello";
+	1) s.charAt(0) --> "H"
+	2) s.indexOf("llo") --> 2 //llo의 인덱스시작번호
+	3) s.lastIndexOf("l") --> 오른쪽에서부터 찾아서 들어갔기 때문에 2가 아닌 3
+	4) s.replace("l","엘") --> He엘lo -->하나만바뀜
+ 	5) s.replaceAll("l","엘") --> He엘엘o
+	6) s.substring(2) --> llo
+	   s.substring(2,4) --> ll
+	   s.substr(1,3) --> 1부터시작해서3글자--> ell
+	let s2 = "Hello Bye";
+	7) s2.split(" ")[0] -> Hello
+	8) s2.toLowerCase()
+	    s2.toUpperCase()
+	9) s2.concat("!")
+	10) s2.length -> length()가 아님
+	
+---------------------------------------------------------
+"innerHTML"
+[정리] - 자바스크립트 문법. (NOT jQuery문법)
+        - document.getElementById().innerHTML =
+	"그 안에 담을 새로운 내용";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+정처산기 day2
+
+--div 기본값은 세로
+ 가로로 바꾸려면 float,flex태그(float추천)
+*{
+	box-sizing: border-box;
+}
+body{	
+	margin: 0;
+	padding: 0;
+}
+기본으로 깔고 들어가기
+float : left;를 했으면 밑코드 무조건 쓰기
+<div style="clear:both;"></div>
+
+부모 - position : absolute;
+자식 - position : relative;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

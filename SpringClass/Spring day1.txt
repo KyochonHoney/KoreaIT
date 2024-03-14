@@ -1,0 +1,44 @@
+정처산기 day1 Spring Legacy
+
+HomeController.java위치
+servlet-context.xml
+root_context.xml
+home.jsp
+web.xml	각각 위치들 암기
+
+*빌드도구.
+Maven, Ant, Gradle
+중 우리가 배우는 건 Maven프로젝트
+
+웹 브라우저에 요청을 받아 Server쪽에서 Dispatcher Servlet에서 html을 쏴줌
+
+Ex01.
+
+Ex02.  "/2" --> Hello World, ES!
+
+[정리] 스프링MVC가 알아서 해준 것 :
+	1)요청 URI를 분석해서 적절한 컨트롤러, 적절한 메서드를 찾아서 호출.
+	2) 적절한 뷰를 찾아서.
+	3) 컨트롤러의 결과 데이터를 뷰로 전달.
+
+Ex03. "/"
+	(form)	--> Controller --> View
+	home.jsp
+	-num1 (입력)
+	- op (입력)
+	- num2 (입력)
+
+	- <a href="<%=request.getContextPath()%>">처음부터 다시</a>
+	-JSTL 중에서 <c:url> 사용.
+
+
+[정리] (고급) Dispatcher Servlet의 동장 바익
+	1) 웹브라우저로부터 Dispatcher Servlet의 동작 방식
+	2) HandlerMapping에게, 요청 URL과 일치되는 컨트롤러가 누구인지 물어봄.
+	3) 컨트롤러를 실행하고, 그 결과를 HandlerAdapter에게 리턴함. 
+
+※Model, ModelAndView
+---------------------------------------------------------------
+[정리] 의존성 주입(Dependency Injection)
+.xml --> "Spring bean" : Singleton-pattern.
+	
